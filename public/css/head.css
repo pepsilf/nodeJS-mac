@@ -1,0 +1,118 @@
+html,body {
+    margin:0;
+    padding:0;
+    background-color: #f0f0f0;
+    /*box-sizing: border-box;*/
+}
+ul,li{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.nav{
+    width:74px;
+    height: 100%;
+    position: fixed;
+    left:0;
+    background-color: #d10048;
+}
+.nav>div{
+    width:74px;
+    height: 100%;
+    position: absolute;
+    left: 74px;
+    top:0;
+    background-color: gray;
+    opacity: 0;
+}
+.nav ul{
+    margin-top: 20px;
+    position: relative;
+    z-index: 9;
+}
+.nav ul div{
+    width:74px;
+    height:56px;
+    background-color: darkorange;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.nav ul li{
+    width:74px;
+    text-align: center;
+    height:56px;
+    line-height: 56px;
+    font-size: 14px;
+    color: white;
+    background: url(../img/bgimg.png) center bottom no-repeat;
+}
+.nav ul li:nth-child(7){
+    line-height: 24px;
+}
+.header{
+    width:1210px;
+    height:70px;
+    margin:0 auto;
+    line-height:70px;
+    padding:20px;
+}
+.rights{
+    float:right;
+
+}
+.rights div{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    overflow: hidden;
+    position: relative;
+}
+.rights span{
+    position: relative;
+}
+.rights span div img{
+    position: absolute;
+    top:-45px;
+}
+.rights span #nums{
+    width:16px;
+    height:16px;
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    background-color: #aa0000;
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+    left: 15px;
+    top: -15px;
+}
+.rights>a{
+    text-decoration: none;
+    box-sizing: border-box;
+    border-left: 1px solid #888;
+    padding-left: 5px;
+    font-size: 12px;
+    color: black;
+}
+.rights>span{
+    box-sizing: border-box;
+    border-left: 1px solid #888;
+    padding-left: 5px;
+    font-size: 12px;
+}
+.rights>span span{
+    font-size: 18px;
+}
+.advert{
+    position: fixed;
+    right:10px;
+    top:200px;
+    width: 54px;
+    font-size: 0;
+}
+.advert #gotop{
+    opacity: 0;
+}

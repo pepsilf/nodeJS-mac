@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宝贝详情</title>
+    <link rel="stylesheet" href="/css/goods.css">
+    <script src="/js/lib/require/require.js" data-main="/js/goods"></script>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="goods">
+        <div class="left">
+            <div class="simg">
+                <img src=<%=data[0].g_p1%>>
+                <div class="sbox"></div>
+            </div>
+            <div class="bbox"><img src=<%=data[0].g_bp1%> src1=<%=data[0].g_bp1%> src2=<%=data[0].g_bp2%>></div>
+            <div class="imgs">
+                <img src=<%=data[0].g_p1%>>
+                <img src=<%=data[0].g_p2%>>
+            </div>
+        </div>
+        <div class="right">
+            <h3><%=data[0].g_name%></h3>
+            <div class="brand">
+                <p>品牌：<span><%=data[0].g_brand%></span></p>
+                <p>商品编号：<span><%=data[0].g_num%></span></p>
+            </div>
+            <p class="price"><%=data[0].g_price%></p>
+            <div class="num">
+                <i>数量 ：<%=data[0].g_nums%></i>
+                <span>-</span><input type="text" value="1"><span>+</span>
+            </div>
+            <div class="cars">
+                <span id="carts">加入购物车</span>
+                <span>
+                    <span><img src="/img/xin.png"></span>
+                    加入收藏
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="lefts">
+            <ul class="list">
+                <li class="current">商品信息</li>
+                <li>商品评论</li>
+                <li>商品问答</li>
+            </ul>
+            <ul class="lists">
+                <li class="lists_1">
+                    <div>
+                        <img class="lazy" data-original="/img/1.jpg">
+                        <img class="lazy" data-original="/img/2.jpg">
+                        <img class="lazy" data-original="/img/3.jpg">
+                        <img class="lazy" data-original="/img/4.jpg">
+                        <img class="lazy" data-original="/img/5.jpg">
+                        <img class="lazy" data-original="/img/6.jpg">
+                        <img class="lazy" data-original="/img/7.jpg">
+                        <img class="lazy" data-original="/img/8.jpg">
+                    </div>
+                    <div>
+                        <p>【名       称】：LA CELLER胶原蛋白精华线球超值分享装</p>
+                        <p>【品       牌】：LA CELLER</p>
+                        <p>【净  含  量】：8mg/粒x90粒/盒</p>
+                        <p>【原产地内容物】：日本</p>
+                        <p>【保  质  期】：三年</p>
+                        <p>【成       分】：可溶性胶原</p>
+                        <p>【使用方法】：洁面后，将一粒线球放在干燥的手心里或在产品的容器内，加入适量的水或者稀薄质地的化妆水，用手指糅合蛋白球做圆周运动，使其溶解成胶原蛋白精华液。然后涂抹于整个面部按摩吸收。如果有多余的精华液，可涂抹于脖子及身体。</p>
+                        <p>【储存方法】：请将本产品置于常温条件下保存，避免阳光直射。</p>
+                        <p>【注意事项】：请勿剧烈摇晃或碰撞本品。开盖后请立即使用完毕。开盖后，如长期接触空气或接受紫外线照射可能会引起产品品质下降。不要让婴幼儿接触此产品, 避免口服。请将本产品置于常温条件下保存，避免阳光直射。</p>
+                    </div>
+                </li>
+                <li class="lists_2">
+                    <span>商品评论</span>
+                    <div></div>
+                    <p>暂无评论</p>
+                </li>
+                <li class="lists_2">
+                    <span>商品问答</span>
+                    <div></div>
+                    <p>暂无问答</p>
+                </li>
+            </ul>
+        </div>
+        <div class="rights">
+            <h3>相关产品</h3>
+            <img src="/img/p1.jpg">
+            <p>LA CELLER 3D胶原蛋白提拉紧致面膜 单片</p>
+            <span>$68</span>
+            <img src="/img/p2.jpg">
+            <p>LA CELLER 胶原蛋白紧致眼膜 5对装</p>
+            <span>$198</span>
+            <img src="/img/p3.jpg">
+            <p>LA CELLER 海洋深层水润泽面膜 5片装</p>
+            <span>$88</span>
+            <img src="/img/p4.jpg">
+            <p>LA CELLER 透明质酸柔肌水（新包装）</p>
+            <span>$168</span>
+            <img src="/img/p5.jpg">
+            <p>LA CELLER 3D胶原蛋白提拉紧致面膜 单片</p>
+            <span>$88</span>
+        </div>
+    </div>
+    <div class="background"></div>
+    <div class="gobuy">
+        <p>商品已成功加入购物车</p>
+        <a href="/shopping/shoppingCart">去结算</a>
+        <a href="">继续购物</a>
+    </div>
+    <div class="foot"></div>
+</body>
+</html>

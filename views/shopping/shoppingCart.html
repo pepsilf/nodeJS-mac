@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车结算</title>
+    <link rel="stylesheet" href="/css/shoppingCart.css">
+    <script src="/js/lib/require/require.js" data-main="/js/shoppingCart"></script>
+</head>
+<body>
+<div class="head"></div>
+<div class="cart">
+    <div class="main">
+        <h3>购物车</h3>
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+            <tr class="heads">
+                <th class="selector" width="36"><input type="checkbox" class="allCheaked"/></th>
+                <th class="commodity" width="480">商品名称</th>
+                <th class="price" width="120">价格</th>
+                <th class="num" width="150">数量</th>
+                <th class="total" width="100">小计（元）</th>
+                <th class="option" width="100">操作</th>
+            </tr>
+            </thead>
+            <tbody id="tab"></tbody>
+        </table>
+        <div class="dels">
+            <p>确定删除该商品？</p>
+            <span>确定</span>
+            <span>取消</span>
+        </div>
+        <div class="settlement">
+            <span><input type="checkbox" class="allCheaked"/>全选</span>
+            <div>
+                <a href="/mecoxlane">继续购物</a>
+                <a>清空选中商品</a>
+            </div>
+            <div class="texts">
+                <p>共 <span class="numbers">0</span>  件商品    商品应付总额 (不包含运费) : </p>
+                <span>(满99元包邮，不含EMS及港澳台)</span>
+            </div>
+            <p class="moneys">$0</p>
+            <div class="money">立即结算</div>
+        </div>
+    </div>
+</div>
+<div class="foot"></div>
+</body>
+</html>
